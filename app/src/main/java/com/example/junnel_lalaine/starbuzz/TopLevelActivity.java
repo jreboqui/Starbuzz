@@ -14,6 +14,7 @@ public class TopLevelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_top_level);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
@@ -21,7 +22,7 @@ public class TopLevelActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
 
                 if (position == 0){
-                    Intent intent = new Intent(TopLevelActivity.this, DrinkCategoryActivity.class);
+                    Intent intent = new Intent(TopLevelActivity.this, DrinkCatergoryActivity.class);
                     startActivity(intent);
                 }
             }
